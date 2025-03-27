@@ -2,6 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
+
 
 
 
@@ -220,6 +223,7 @@ span{
 
 }
 
+
 .btn:hover{
     transform: scale(1.05);
     box-shadow: 0 0 50px var(--main-color)
@@ -230,6 +234,7 @@ span{
    align-items: center;
    gap: 1.5rem;
 }
+
 
 
 .btn-group a:nth-of-type(2){
@@ -246,7 +251,31 @@ span{
     background-color: var(--main-color);
     color:black;
 }
+/* Button Styling */
+.btns {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #fff;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
 
+/* Hover Effect */
+.btns:hover {
+    opacity: 0.8; /* Slightly transparent on hover */
+}
+
+/* Active Effect */
+.btns:active {
+    opacity: 0.6; /* More transparent on click */
+}
+/* Button Styling */
 
 .text-animation {
     font-size: 34px;
@@ -449,6 +478,7 @@ span{
 
 
 .project-section {
+    margin-top: 50px;
     margin-bottom: 50px;
 }
 
@@ -475,12 +505,12 @@ span{
 }
 
 .project-info h3 {
-    font-size: 1.8rem;
+    font-size: 2.3rem;
     color: #FB78FA;
 }
 
 .project-info p {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     color: #d8d8d8;
 }
 
@@ -524,111 +554,17 @@ span{
     color: #FF69B4;
 }
 
-/* New Project Section */
-.new-project-section {
-    margin-top: 100px;
-    padding: 50px 10%;
-}
-
-.new-project h2 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-    color: #FB78FA;
-}
-
-.new-project {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
-
-.design-inspiration-container {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
-.design-inspiration-pair {
-    display: flex;
-    gap: 20px;
-    justify-content: space-between;
-}
-
-.design-item,
-.inspiration-item {
-    flex: 1;
-    background: #252525;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.1);
-}
-
-h3 {
-    font-size: 1.8rem;
-    color: #FB78FA;
-}
-
-.design-item img,
-.inspiration-item img {
-    width: 100%;
-    height: 500px; /* Adjust the height to prevent images from being too lengthy */
-    object-fit: cover; /* Maintain aspect ratio without stretching */
-    border-radius: 5px;
-    transition: transform 0.3s ease-in-out;
-    max-height: 1000px; /* Maximum height for larger screens */
-}
-
-.design-item img:hover,
-.inspiration-item img:hover {
-    transform: scale(1.05);
-}
-
-.additional-images {
-    background: #252525;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.1);
-}
-
-.additional-item {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.additional-item img {
-    width: 100%;
-    height: 250px; /* Adjust the height for consistency */
-    object-fit: cover;
-    border-radius: 5px;
-    max-height: 300px; /* Maximum height for larger screens */
-}
-
-.project-description {
-    font-size: 1.2rem;
-    color: #d8d8d8;
-    margin-top: 30px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .design-inspiration-pair {
-        flex-direction: column;
-    }
-
-    .design-item,
-    .inspiration-item {
-        flex: none;
-    }
-
-    .additional-item img {
-        height: 200px; /* Adjust for mobile */
-    }
-}
 
 .project-info .icons {
     font-size: 2rem;
     color: #FB78FA;
 
+}
+.project-info  .Afont {
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:  3rem;
 }
 
 /* 3D Models Section */
@@ -754,3 +690,385 @@ h3 {
     }
 }
 
+
+
+/* About Me Section */
+.about-me {
+    padding: 20rem 12% 2rem; /* Adjusted top and bottom padding */
+    margin-bottom: -20rem;
+    background: var(--second-bg-colour);
+    color: var(--text-color);
+}
+.about-content {
+    padding-left: 8%;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    font-size: 3.5rem;
+    color: var(--hover-color);
+    margin-bottom: 2rem;
+}
+
+.about-text p {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.about-image img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .about-me {
+        padding: 20rem 5% 0; /* Adjusted for smaller screens */
+        margin-bottom: -10rem; /* Optional: Pull closer on small screens */
+    }
+
+    .about-text h2 {
+        font-size: 2.5rem;
+    }
+
+    .about-text p {
+        font-size: 1.6rem;
+    }
+
+    .about-image img {
+        max-width: 100%;
+    }
+}
+/* Styles for iPhone SE (375px width) */
+@media (min-width: 430px) and (max-width: 900px) {
+    .about-me {
+        padding: 20rem 5% 1rem; /* Reduce padding for very small screens */
+        margin-bottom: -60rem;
+    }
+
+    .about-text h2 {
+        font-size: 1.8rem; /* Even smaller font size for iPhone SE */
+    }
+
+    .about-text p {
+        font-size: 0.9rem; /* Even smaller font size for iPhone SE */
+    }
+
+    .about-image img {
+        max-width: 150px; /* Even smaller image for iPhone SE */
+    }
+}
+
+@media (min-width: 2000px) and (max-width: 4000px) {
+    .about-me {
+        padding: 20rem 5% 0; /* Adjusted for smaller screens */
+        margin-bottom: -75rem; /* Optional: Pull closer on small screens */
+    }
+
+    .about-text h2 {
+        font-size: 2.5rem;
+    }
+
+    .about-text p {
+        font-size: 1.9rem;
+    }
+
+    .about-image img {
+        max-width: 70%;
+    }
+}
+
+
+/* Color Container */
+.color-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between boxes */
+    max-width: 800px;
+    width: 100%;
+}
+
+/* Color Box */
+/* Color Box */
+.color-box {
+    flex: 0 0 100px; /* flex-grow: 0, flex-shrink: 0, flex-basis: 100px */
+    height: 40px; /* Fixed height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.color-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Hex Text */
+.hex-text {
+    font-size: 2rem; /* Smaller font size */
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .color-box {
+        flex: 0 0 calc(50% - 20px); /* 2 boxes per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .color-box {
+        flex: 0 0 100%; /* 1 box per row on very small screens */
+    }
+}
+
+/* Target the image only in the .encouraging-section */
+.encouraging-section .about-image img {
+    width: 300px; /* Set a fixed width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.encouraging-section .about-image img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .encouraging-section .about-image img {
+        width: 250px; /* Adjust image size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .encouraging-section .about-image img {
+        width: 200px; /* Adjust image size for very small screens */
+    }
+}
+
+/* Flexbox Container */
+.flex-container {
+    display: flex;
+    align-items: center; /* Vertically center items */
+    gap: 20px; /* Space between items */
+    padding: 20px;
+    background-color: #181818;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Flex Items */
+.flex-item {
+    flex: 1; /* Distribute space equally */
+}
+
+/* Responsive Image */
+.flex-item img {
+    max-width: 100%; /* Ensure the image is responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: Add rounded corners */
+}
+
+/* Text Styling */
+.flex-item p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+
+    .flex-item img {
+        width: 100%; /* Full width for images on smaller screens */
+    }
+}
+/* Table Container */
+.table-container {
+    width: 100%;
+    overflow-x: auto; /* Enable horizontal scrolling on small screens */
+    margin: 20px 0;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    font-size: 1.8rem;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+thead {
+
+    color: white;
+}
+
+/* Responsive Table */
+@media (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+    
+    thead tr {
+        display: none; /* Hide table headers */
+    }
+    
+    tr {
+        margin-bottom: 10px;
+        border: 1px solid #ddd;
+        padding: 10px;
+    }
+
+    td {
+        font-size: 1.8rem;
+        text-align: left;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        font-weight: bold;
+        
+    }
+}
+
+.project-info .font1{
+    font-family: "Inknut Antiqua", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    padding-left: 0.50%;
+}
+
+
+.project-info .font2{
+    font-family: "Jua", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    padding-left: 0.50%;
+}
+
+.project-info .font3{
+    font-family: "Jua", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    padding-left: 0.50%;
+}
+
+
+
+/* General card styling */
+.card {
+    width: 100%; /* Responsive width */
+    max-width: 18rem; /* Maximum width for larger screens */
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #ffffff;
+    margin: 30rem auto; /* Center the card with margin on top */
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Card image styling */
+.card-img-top {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/* Card body styling */
+.card-body {
+    padding: 1.5rem;
+    text-align: center;
+    
+}
+
+/* Card title styling */
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+    color: #333333;
+}
+
+/* Card text styling */
+.card-text {
+    font-size: 0.9rem;
+    color: #666666;
+    margin-bottom: 1.5rem;
+}
+
+/* Button styling */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    border-radius: 25px;
+    padding: 0.5rem 1.5rem;
+    font-size: 0.9rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    text-decoration: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card {
+        max-width: 90%; /* Adjust width for smaller screens */
+    }
+}
