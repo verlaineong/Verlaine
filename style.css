@@ -1448,3 +1448,9 @@ thead {
       font-size: 1.2rem;
     }
   }
+
+  .site-footer {
+    width: 100%;
+    padding: 20px 0;
+
+  }
