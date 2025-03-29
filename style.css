@@ -1450,7 +1450,5 @@ thead {
   }
 
   .site-footer {
-    width: 100%;
-    padding: 20px 0;
-
-  }
+    margin-top: 40px; /* Adjust as needed */
+}
