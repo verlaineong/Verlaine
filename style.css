@@ -1072,3 +1072,379 @@ thead {
         max-width: 90%; /* Adjust width for smaller screens */
     }
 }
+
+@media(max-width: 895px){
+    #menu-icon{
+        display: block;
+
+    }
+    .navbar{
+        position:absolute;
+        top: 100%;
+        right: 0;
+        width: 50%;
+        padding: 1rem 3%;
+        background: rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(20px);
+        border-bottom-left-radius: 2rem;
+        border-left: 2px solid var(--main-color);
+        border-bottom: 2px solid var (--main-color);
+        display: none;
+
+    }
+
+    .navbar.active{
+        display: block;
+
+    }
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        color: white;
+    }
+
+    .home {
+        flex-direction: column-reverse;
+        margin: 5rem 4rem;
+
+    }
+    .home-content h3{
+        font-size: 2.6rem;
+    }
+
+
+    .home-content h1{
+        font-size: 8rem;
+        margin-top: 3rem;
+    }
+
+    .home-content p{
+        max-width: 600px;
+        margin: 0 auto;
+
+
+    }
+
+    
+    .home-img img{
+        width: 58vw;
+    }
+    .services h2{
+        margin-bottom: 3rem;
+    }
+
+    .services-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+}
+
+
+/* About Me Section */
+.about-me {
+    padding: 15rem 12% 5rem;
+    background: var(--second-bg-colour);
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    font-size: 3.5rem;
+    color: var(--main-color);
+    margin-bottom: 2rem;
+}
+
+.about-text p {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    color: var(--main-color);
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+
+}
+
+/* Skills Section */
+.skills {
+    padding: 27rem 12%;
+    background: var(--bg-color);
+}
+
+.skills-title {
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 5rem;
+    color: var(--hover-color);
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+}
+
+.skill-category {
+    background: #252525;
+    padding: 2rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.skill-category:hover {
+    transform: translateY(-10px);
+}
+
+.skill-category h3 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    color: var(--main-color);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.skill-icons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.skill-item i {
+    font-size: 4rem;
+    transition: transform 0.3s ease;
+}
+
+.skill-item:hover i {
+    transform: scale(1.2);
+}
+
+.skill-item span {
+    font-size: 1.6rem;
+    color: var(--main-color);
+}
+
+/* Timeline Section */
+.education-timeline {
+    padding: 5rem 12%;
+    background: var(--second-bg-colour);
+}
+
+.education-timeline h2 {
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 5rem;
+    color: var(--hover-color);
+}
+
+/* Existing styles remain the same until media queries */
+
+/* iPhone 14 Responsive Adjustments */
+@media only screen and (max-width: 428px) {
+    /* About Me Section */
+    .about-me {
+        padding: 12rem 8% 3rem; /* Increased top padding */
+    }
+    
+    .about-content {
+        flex-direction: column;
+        gap: 4rem; /* Increased gap between text and image */
+    }
+    
+    .about-image {
+        margin-top: 3rem; /* Specific margin for image */
+    }
+    
+    .about-image img {
+        max-width: 80%; /* Slightly larger image */
+        margin-top: 2rem; /* Extra space above image */
+    }
+    
+    /* Skills Section */
+    .skills {
+        padding: 6rem 8% 3rem; /* Increased top padding */
+        margin-top: 2rem; /* Pushes section down further */
+    }
+    
+    .skills-title {
+        font-size: 3rem;
+        margin-bottom: 4rem; /* More space below title */
+        padding-top: 2rem; /* Extra padding at top */
+    }
+    
+    .skills-container {
+        grid-template-columns: 1fr; /* Single column layout */
+        gap: 2.5rem; /* Increased gap between items */
+    }
+    
+    .skill-category {
+        padding: 2rem 1.5rem;
+    }
+    
+    /* Timeline Section */
+    .education-timeline {
+        padding: 4rem 8%;
+    }
+}
+
+/* Additional Safari/iOS specific fixes */
+@supports (-webkit-touch-callout: none) {
+    @media (max-width: 428px) {
+        .about-me {
+            padding-top: 14rem; /* Extra space for iOS notch */
+        }
+        
+        .skills {
+            padding-top: 7rem;
+            scroll-margin-top: 8rem; /* Prevents navbar overlap */
+        }
+    }
+}
+/* iPhone 14 (430×932) Specific Fix */
+@media only screen and (max-width: 430px) {
+    /* About Me Section Adjustments */
+    .about-me {
+      padding-bottom: 6rem !important; /* Extra space after about section */
+      position: relative;
+      z-index: 2;
+    }
+    
+    /* Skills Section Fix */
+    .skills {
+      padding-top: 8rem !important;
+      margin-top: -4rem !important; /* Pulls section up slightly */
+      position: relative;
+      z-index: 1;
+    }
+    
+    .skills::before {
+      content: "";
+      display: block;
+      height: 4rem;
+      margin-top: -4rem;
+      visibility: hidden;
+    }
+    
+    .skills-title {
+      margin-top: 2rem !important;
+      padding-top: 2rem !important;
+    }
+    
+    /* Clearance for sticky headers */
+    body {
+      padding-top: env(safe-area-inset-top);
+    }
+  }
+  
+  /* Fallback for similar devices */
+  @media only screen and (max-width: 430px) {
+    .about-me {
+      margin-bottom: 4rem;
+    }
+    .skills {
+      margin-top: 2rem;
+    }
+  }
+
+/* iPhone 14 (430×932) Specific Layout */
+@media only screen and (max-width: 430px) {
+    .about-content {
+      display: flex;
+      flex-direction: column; /* Stack vertically */
+    }
+    
+    .about-text {
+      order: 1; /* Text comes first */
+      margin-bottom: 3rem; /* Space before image */
+    }
+    
+    .about-image {
+      order: 2; /* Image comes after */
+      margin-top: 0; /* Remove any default margins */
+      padding-top: 2rem; /* Add space above image */
+    }
+    
+    .about-image img {
+      max-width: 75%; /* Slightly smaller image */
+      margin: 0 auto; /* Center the image */
+    }
+  }
+
+
+  /* Footer Styles */
+.site-footer {
+    background: var(--second-bg-colour);
+    padding: 3rem 0;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.1);
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  
+  .footer-email {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--main-color);
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-email:hover {
+    color: var(--hover-color);
+  }
+  
+  .footer-email i {
+    font-size: 2rem;
+  }
+  
+  .footer-copyright {
+    color: var(--main-color);
+    font-size: 1.4rem;
+    opacity: 0.8;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .site-footer {
+      padding: 2rem 0;
+    }
+    
+    .footer-email {
+      font-size: 1.4rem;
+    }
+    
+    .footer-copyright {
+      font-size: 1.2rem;
+    }
+  }
